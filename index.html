@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pjs : main page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        body #grid_header{
+            margin: 0 auto;
+		    max-width: calc(100% - 4em);
+		    width: 80em;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        body #contents {
+            margin: 0 auto;
+		    max-width: calc(100% - 4em);
+		    width: 60em;
+            padding-top: 50px;
+        }
+        #grid_menu {
+            border-bottom: 2px solid gray;
+ 
+        }
+        h2 {
+            border-bottom: 1px solid gray;
+            padding-bottom: 10px;
+        }
+        #content {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+        .new {
+            padding-bottom: 50px;
+            display: grid;
+        }
+        .best {
+            padding-bottom: 50px;
+        }
+        #grid_header {
+            display: grid;   
+        }
+        #grid_menu a {
+            text-decoration: none;
+            color: black;
+        }
+        #grid_header a {
+            text-decoration: none;
+            color: black;
+        }
+        #grid_header ul li {
+            list-style: none;
+            padding: 0 11px;
+            float:left;
+        }
+        #grid_menu ul li {
+            list-style: none;
+            float: left;
+        }
+        #contents {
+            display: grid;
+        }
+        .new ul li{
+            list-style:none;
+            float: left;
+        }
+        .best ul li{
+            list-style:none;
+            float: left;
+            display:inline;
+        }
+        .new img {
+            margin: 20px;
+        }
+        .best img {
+            margin: 20px;
+            display: inline;
+        }
+        input {
+            width: 20%!IMPORTANT;
+            display: inline;
+            float: left;
+        }
+        .header_top {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .gnb_menu {
+            font-size: 20px;
+        }
+        .best_items {
+            text-align: center;
+            font-size: 13px;
+        }
+        .new_items {
+            text-align: center;
+            font-size: 13px;
+        }
+        .best_items a {
+            text-decoration: none;
+            color: black;
+        }
+        .new_items a {
+            text-decoration: none;
+            color: black;
+        }
+        .search img {
+            width: 50%;
+        }
+        .header_top {
+            padding-left: 65%;
+        }
+        .search {
+            padding-left: 800px;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid_header">
+        <div class="header_top" >
+            <ul class="top_member_box">
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+				<li><a href="mypage.html">마이페이지</a></li>
+                <li><a href="shipping.html">주문/배송</a></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div><br>
+    <form action="https://search.naver.com/search.naver" method="GET">
+        <div class="search">
+                <input name="query" type="text" class="form-control" id="query" placeholder="검색어 입력" style="width:300px;" aria-label="search" aria-describedby="button-addon2">
+        <button class="btn btn-secondary" type="submit" id="button-addon2"><img src="search.png"></button>
+        </div>
+    </form><br>
+    <div id="grid_menu">
+        <nav class="navbar navbar-expand-md bg-light">
+            <ul class="gnb_menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지옷</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지간식</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지장난감</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#"><strong>커뮤니티</strong></a>
+                </li>
+            </ul>
+        </nav>
+	</div>
+    </div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="pjs_1.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="pjs_2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="pjs_3.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="pjs_4.jpg" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <script>    
+      $(function(){     
+        $('#carousel-example-generic').carousel({
+        interval: 1000,wrap: true,keyboard : true	  
+        });	
+        });  
+        </script>
+    <div id="contents">
+        <div class="new">
+            <h2>NEW</h2><br>
+            <ul class="new_items">
+                <li><img src="pjs_new1.jpg" width="60%"><a href="login.html"><br><strong>닭가슴살&채소</strong><br>[화식 50g 6/10ea]</a><span class="txt_bar"></span></li>
+                <li><img src="pjs_new2.jpg" width="60%"><a href="login.html"><br><strong>닭가슴살&연어</strong><br>[화식 50g]</a><span class="txt_bar"></span></li>
+                <li><img src="pjs_new3.jpg" width="60%"><a href="login.html"><br><strong>치킨&채소</strong><br>[에너지바 10팩]</a><span class="txt_bar"></span></li>
+                <li><img src="pjs_new4.jpg" width="60%"><a href="login.html"><br><strong>한달의 행복세트</strong><br>[화식 50g 28ea]</a><span class="txt_bar"></span></li>
+            </ul>
+        </div>
+        <div class="best">
+            <h2>BEST</h2>
+            <ul class="best_items">
+                <li><img src="pjs_best1.jpg" width="60%"><a href="login.html"><br><strong>1팩 골라담기</strong><br>[화식 50g]</a><span class="txt_bar"></span></li>
+                <li><img src="pjs_best2.jpg" width="60%"><a href="login.html"><br><strong>고구마츄 황태</strong><br>[100g 2ea]</a><span class="txt_bar"></span></li>
+                <li><img src="pjs_best3.jpg" width="21%"><a href="login.html"><br><strong>핑크패딩</strong><br>[*하네스 별도구매]</a><span class="txt_bar"></span></li>
+                <li><img src="pjs_best4.jpg" width="26%"><a href="login.html"><br><strong>참알찬 삼첩반상</strong><br>[1set 3ea]</a><span class="txt_bar"></span></li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pjs : join page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> 
+    <style>
+        body #grid_header{
+            margin: 0 auto;
+		    max-width: calc(100% - 4em);
+		    width: 80em;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        body #join_page {
+            margin: 0 auto;
+		    max-width: calc(100% - 4em);
+		    width: 60em;
+        }
+        #grid_menu {
+            border-bottom: 2px solid gray;
+ 
+        }
+        #grid_header {
+            display: grid;   
+        }
+        #grid_menu a {
+            text-decoration: none;
+            color: black;
+        }
+        #grid_header a {
+            text-decoration: none;
+            color: black;
+        }
+        #grid_header ul li {
+            list-style: none;
+            padding: 0 11px;
+            float:left;
+        }
+        #grid_menu {
+            display: grid;
+        }
+        #grid_menu ul li {
+            list-style: none;
+            float: left;
+        }
+        input {
+            display: inline;
+            float: left;
+        }
+        .search input {
+            width: 20%!IMPORTANT;
+        }
+        .header_top {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .gnb_menu {
+            font-size: 20px;
+        }
+        .content {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+		    max-width: calc(100% - 4em);
+		    width: 60em;
+            height: 25em;
+            border: 1px solid #353535;
+            padding-top: 20px;
+            background-color: rgb(233, 233, 233);
+        }
+        .tools {
+            margin: 0 20%;
+		    max-width: calc(100% - 4em);
+        }
+        .tools a {
+            text-decoration: none;
+            color: black;
+        }
+        .join_box {
+            margin-top: 60px; 
+        }
+        .text_bar {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .search img {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid_header">
+        <div class="header_top" >
+            <ul class="top_member_box">
+                <li><a href="login.html">로그인</a><span class="txt_bar"></span></li>
+                <li><a href="join.html">회원가입</a><span class="txt_bar"></span></li>
+				<li><a href="mypage.html">마이페이지</a><span class="txt_bar"></span></li>
+                <li><a href="shipping.html">주문/배송</a><span class="txt_bar"></span></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div><br>
+    <form action="https://search.naver.com/search.naver" method="GET">
+        <div class="search">
+            <mx-auto>
+                <input name="query" type="text" class="form-control" placeholder="검색어 입력" aria-label="search" aria-describedby="button-addon2">
+            </mx-auto>
+        <button class="btn btn-secondary" type="submit" id="button-addon2"><img src="search.png"></button>
+        </div>
+    </form><br>
+    <div id="grid_menu">
+		<nav class="navbar navbar-expand-md bg-light">
+            <ul class="gnb_menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지옷</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지간식</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지장난감</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#"><strong>커뮤니티</strong></a>
+                </li>
+            </ul>
+        </nav>
+	</div>
+    </div>
+    <div class="tools">
+    <a href="index.html" class="local_home">HOME</a><span> > </span><strong>회원가입</strong>
+    </div>
+    <div id="join_page">
+            <div class="join_box">
+                <h2>회원가입</h2>
+                <div class="content">
+                    <form>
+                        <div class="text_bar">
+                        <span>회원 가입</span>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form2Example1" class="form-control" style="font-size:13px;" placeholder="이메일 주소"/>
+                        </div>
+                        <br>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form2Example2" class="form-control" style="font-size:13px;" placeholder="패스워드"/>
+                        </div>
+                        <br>
+                        <!-- Nickname input -->
+                        <div class="form-outline mb-4">
+                           <input type="nickname" id="form2Example3" class="form-control" style="font-size:13px;" placeholder="닉네임"/>
+                        </div>
+                        <br>
+                        <!-- Submit button -->
+                        <button type="button" class="btn btn-secondary btn-block mb-4">가입하기</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

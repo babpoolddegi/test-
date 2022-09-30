@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0926_연습장 </title>
+</head>
+<body>
+    <h1>test0926 연습장</h1>
+    <img src="puppy.jpg" class="rounded-pill" alt="...">
+    <div class="card" style="width: 18rem;">
+      <img src="puppy.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="index.html" target="_blank" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    <input id="night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value === 'night') {
+          document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color= 'white';
+        document.querySelector('#night_day').value = 'day';   
+      } else {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color= 'black';
+        document.querySelector('#night_day').value = 'night';   
+      }
+      "><br>
+	  <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';    
+        document.querySelector('body').style.color = 'white'; ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black'; ">
+    <h1>Conditional statements</h1>
+  <h2>Program</h2>
+  <script>
+    document.write("1<br>");
+    document.write("2<br>");
+    document.write("3<br>");
+    document.write("4<br>");
+  </script>
+    <h1>Conditional statements</h1>
+  <script>
+    document.write("1<br>");
+    document.write("2<br>");
+    document.write("3<br>");
+    document.write("4<br>");
+  </script>
+    <h2>IF-true</h2>
+  <script>
+    document.write("1<br>");
+    if(true) {
+      document.write("2<br>");
+    } else {
+      document.write("3<br>");
+    }
+    document.write("4<br>");
+  </script>
+    <h3>1&lt;2</h3>
+  <script>
+    document.write(1<2);
+  </script>
+  <h3>1&lt;1</h3>
+  <script>
+    document.write(1<2);
+  </script>
+    <h1>Comparison operators & Boolean</h1>
+  <h2>===</h2>
+  <script>
+    document.write(1===1);
+  </script>
+
+  <h3>1===2</h3>
+  <script>
+    document.write(1===2);
+  </script>
+    <input id="night_day" type="button" value="night" onclick="
+      if(document.querySelector('#night_day').value === 'night') 
+      {
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color= 'white';
+        document.querySelector('#night_day').value = 'day';   
+      } 
+      else 
+      {
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color= 'black';
+        document.querySelector('#night_day').value = 'night';   
+      }
+      "><br>
+    <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';    
+        document.querySelector('body').style.color = 'white'; ">
+    <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black'; ">
+    <h3>onkeyup 함수확인</h3>
+    <input type="text" onkeyup="alert('key up')"><br>
+    <h3>onkeydown 함수확인</h3>
+    <input type="text" onkeydown="alert('key down')"><br>
+    <h3>onchange 함수확인</h3>
+    <input type="text" onchange="alert('changed')"><br>
+    <input type="button" value="hi" onclick="alert('hi')"><Br>
+    
+    <br>
+    <script>
+      document.write(1+1);
+    </script>
+    <h1>html</h1>
+    1+1
+    <br>
+    <script>
+    document.write('hello world');
+    </script><br><br>
+
+<script>
+    var target = document.querySelector('body');
+</script>
+    <input
+    type="button"
+    value="night"
+    onclick="
+if(this.value === 'night') 
+    {
+    target.style.backgroundColor = 'black';
+    target.style.color= 'white';
+    this.value = 'day';
+    } 
+else 
+    {
+    target.style.backgroundColor = 'white';
+    target.style.color= 'black';
+    this.value = 'night';
+    }
+">
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>test0926 연습장</h1>
+    <h2>미니 예제 실습-객체선언, 값추가,반복출력, 함수선언 및 사용</h2>
+    <script>
+        var pjs = {
+            "화면설계 및 구현" : "생활코딩",
+            "데이터베이스" : "오라클 RDBMS"
+        }
+        pjs["화면 설계 프로젝트"] = "개인 프로젝트";
+        pjs["데이터베이스 프로젝트"] = "DB설계";
+        </script>
+        <script>
+            document.write("===============================<br>");
+        for(var key in pjs) {
+            document.write(key + ' : ' + pjs[key] + '<br>');
+        }
+        </script>
+        <h2>함수선언 및 사용.</h2>
+        <script>
+            pjs.teach=function () {
+                for (var key in this){
+                    if(key !="teach"){
+                        document.write(key + ':' + this[key] + '<br>')
+                    }
+                }
+            }
+            pjs.teach();
+        </script>
+        
+    
+    </script>
+    <h2>객체 선언, 값 가져오기 확인중</h2>
+    <script>
+        var coworkers = {
+        "programmer" : "egoing",
+       "designer" : "leezche",
+       "lunch" : "mcdonald"
+    }
+	for(var key in coworkers) {
+	  document.write(key + '<br>');
+	}
+    document.write("programmer : " + coworkers.programmer + "<br>");
+    document.write("designer : " + coworkers.designer + "<br>");
+    document.write("lunch : " + coworkers.lunch + "<br>");
+    document.write("===============================<br>");
+    coworkers.bookkeeper = "duru";
+    document.write(coworkers);
+    coworkers["data scientist"] = "taeho";
+    document.write("data scientist : " + coworkers["data scientist"] + "<br>");
+    for(var key in coworkers) {
+	  document.write(key + '<br>');
+	}
+    </script>
+    <h2>값 출력하기.</h2>
+    <script>
+    for (var key in coworkers) {
+        document.write(coworkers[key] + '<br>');
+        }
+    </script>
+    <h2>키와 값 모두 출력하기.</h2>
+    <script>
+    for (var key in coworkers) {
+        document.write(key + ' : ' + coworkers[key] + '<br>');
+        }
+    </script>
+    <h2>Property & Method 객체함수 만들기</h2>
+    <script>
+    coworkers.showAll = function() {
+     for(var key in this) {
+        document.write(key + ' : ' + this[key] + '<br>');
+    }
+    }
+    coworkers.showAll();
+    </script>
+    <h1> Array </h1>
+    <h2>Syntax</h2>
+    <script>
+    var coworkers = ["egoing", "leezche"];
+    </script>
+    <h2>get</h2>
+    <script>
+    document.write(coworkers[0]+'<br>');
+    document.write(coworkers[1]);
+    </script>
+    <h2>Return</h2>
+    <script>
+        function sum2(left, right) {
+            return left + right;
+        }
+        document.write(sum2(2,3) + '<br>');
+        document.write('<div style="color: red">'+ sum2(2,3) + '</div><br>');
+        document.write(
+            '<div style="font-size: 3rem">' + sum2(2,3) + '</div><br>'
+        );
+    </script>
+    <br><br>
+    <script>
+        function sum(left, right) {
+         document.write(left+right);
+         }
+        function sumColorRed(left, right) {
+        document.write('<div style="color: red;">' + left+right+'</div>');
+        }
+         
+         sum(2,3);
+         sumColorRed(2,3);
+         sum(3,4); 
+         </script>
+         <br><br>
+    <script>
+        function sum(left, right){
+            document.write(left+right+'<br>');
+        }
+        sum(2,3);
+
+    </script>
+    <script>
+        function sum(left, right){
+        document.write(left+right+'<br>');
+    }
+    sum(2,3);
+    sum(5,6);
+    </script>
+    <h2>Parameter & Argument</h2>
+<script>
+	document.write(1+1);
+</script>
+    <h2>Parameter & Argument</h2>
+<script>
+	function onePlusOne() {
+	document.write(1+1+'<br>');
+	}
+	onePlusOne();
+    onePlusOne();
+    onePlusOne();
+
+	
+</script>
+    <script>
+        function two() {
+        document.write('<li>2-1</li>');
+        document.write('<li>2-2</li>');
+        }
+        document.write('<li>1</li>');
+        two();
+        document.write('<li>3</li>');
+        two();
+        </script>
+    <input type="button" value="night" onclick="
+        var target = document.querySelector('body');
+        if (this.value === 'night') {
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            this.value = 'day'
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while ( i < alist.length) {
+                    alist[i].style.color = 'powderblue';
+                    console.log(alist[i]);
+                    i = i + 1;
+                }
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            this.value = 'night'
+
+            var alist = document.querySelectorAll('a');
+            var i = 0;
+            while ( i < alist.length) {
+                    alist[i].style.color = 'blue';
+                    console.log(alist[i]);
+                    i = i + 1;
+                }
+
+            }
+        ">
+    <script>
+        var coworkers = ["egoing", "leezche", "duru","taeho"];
+        var i = 0;
+        while(i < coworkers.length) {
+          document.write('<li><a href=http://a.com/'+ coworkers[i] + '>' + coworkers[i] + '</a></li>');
+          i = i + 1;
+        }
+      </script>
+    <script>
+        var coworkers = ["egoing", "leezche", "duru","taeho"];
+        var i = 0;
+        while(i < coworkers.length) {
+          document.write('<li>'+ coworkers[i] + '</li>');
+          i = i + 1;
+        }
+      </script>
+    <h1> Array </h1>
+  <h2>Syntax</h2>
+  <script>
+    var coworkers = ["egoing", "leezche"];
+  </script>
+  <h2>get</h2>
+  <script>
+    document.write(coworkers[0]);
+    document.write(coworkers[1]);
+  </script>
+  <h2>count</h2>
+  <script>
+    document.write(coworkers.length);
+  </script>
+  <h2>add</h2>
+  <script>
+    coworkers.push('duru');
+    coworkers.push('taeho');
+  </script>
+
+  <h2>count</h2>
+  <script>
+    document.write(coworkers.length);
+  </script>
+
+      <h2>Coworkers3</h2>
+      <ul>
+        <script>
+             var coworkers = ["egoing", "leezche", "duru","taeho"];
+          var i = 0;
+          while(i < 4) {
+            document.write('<li>'+coworkers[i]+'</li>');
+            i = i + 1;
+          }
+        </script>
+      </ul>
+      <ul>
+        <script>
+          document.write('<li>1</li>');
+          document.write('<li>2</li>');
+          document.write('<li>3</li>');
+          document.write('<li>4</li>');
+        </script>
+      </ul>
+    <h2>2, 3번째 코드 3번 반복</h2>
+    <script>
+      document.write('<li>1</li>');
+      var i = 0;
+      while(i<3) {
+        document.write('<li>2</li>');
+        document.write('<li>3</li>');
+        i = i + 1;
+      }
+      document.write('<li>4</li>');
+    </script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pjs : login page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> 
+    <style>
+        body #grid_header{
+            margin: 0 auto;
+		    max-width: calc(100% - 4em);
+		    width: 80em;
+            padding-top: 20px;
+            padding-bottom: 30px;
+        }
+        body #login_page {
+            margin: 0 auto;
+		    max-width: calc(100% - 4em);
+		    width: 60em;
+        }
+        #grid_menu {
+            border-bottom: 2px solid gray;
+        }
+        #grid_header {
+            display: grid;   
+        }
+        #grid_menu a {
+            text-decoration: none;
+            color: black;
+        }
+        #grid_header a {
+            text-decoration: none;
+            color: black;
+        }
+        #grid_header ul li {
+            list-style: none;
+            padding: 0 11px;
+            float:left;
+        }
+        #grid_menu {
+            display: grid;
+        }
+        #grid_menu ul li {
+            list-style: none;
+            float: left;
+        }
+        input {
+            display: inline;
+            float: left;
+        }
+        .search input {
+            width: 20%!IMPORTANT;
+        }
+        .header_top {
+            font-size: 13px;
+            line-height: 1.5;
+            color: #333;
+        }
+        .gnb_menu {
+            font-size: 20px;
+        }
+        .content {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+		    max-width: calc(100% - 4em);
+		    width: 60em;
+            height: 30em;
+            border: 1px solid #353535;
+            padding-top: 20px;
+            background-color: rgb(233, 233, 233);
+        }
+        .tools {
+            margin: 0 20%;
+		    max-width: calc(100% - 4em);
+        }
+        .tools a {
+            text-decoration: none;
+            color: black;
+        }
+        .login_box {
+            margin-top: 60px;
+        }
+        .login_box a {
+            text-decoration: none;
+            color: black;
+        }
+        .text_bar {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        }
+        h2 {
+            margin-bottom: 20px;
+        }
+        .search img {
+            width: 50%;
+        }
+      
+
+    </style>
+</head>
+<body>
+    <div id="grid_header">
+        <div class="header_top" >
+            <ul class="top_member_box">
+                <li><a href="login.html">로그인</a><span class="txt_bar"></span></li>
+                <li><a href="join.html">회원가입</a><span class="txt_bar"></span></li>
+				<li><a href="mypage.html">마이페이지</a><span class="txt_bar"></span></li>
+                <li><a href="shipping.html">주문/배송</a><span class="txt_bar"></span></li>
+                <li><a href="#">고객센터</a></li>
+            </ul>
+        </div><br>
+    <form action="https://search.naver.com/search.naver" method="GET">
+        <div class="search">
+            <mx-auto>
+                <input name="query" type="text" class="form-control" placeholder="검색어 입력" aria-label="search" aria-describedby="button-addon2">
+            </mx-auto>
+        <button class="btn btn-secondary" type="submit" id="button-addon2"><img src="search.png"></button>
+        </div>
+    </form><br>
+    <div id="grid_menu">
+		<nav class="navbar navbar-expand-md bg-light">
+            <ul class="gnb_menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지옷</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지간식</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#"><strong>강아지장난감</strong></a>
+                </li><li class="nav-item">
+                    <a class="nav-link" href="#"><strong>커뮤니티</strong></a>
+                </li>
+            </ul>
+        </nav>
+	</div>
+    </div>
+    <div class="tools">
+    <a href="index.html" class="local_home">HOME</a><span> > </span><strong>로그인</strong>
+    </div>
+    <div id="login_page">
+            <div class="login_box">
+                <h2>로그인</h2>
+                <div class="content">
+                    <form>
+                        <div class="text_bar">
+                        <span>회원 로그인</span>
+                        <!-- Email input -->
+                        <div class="form-outline1">
+                          <input type="email" id="form2Example1" class="form-control" style="font-size:13px;" placeholder="이메일 주소"/>
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-outline2">
+                          <input type="password" id="form2Example2" class="form-control" style="font-size:13px;" placeholder="패스워드"/>
+                        </div>
+                      
+                        <!-- 2 column grid layout for inline styling -->
+                        <div class="row mb-4">
+                          <div class="col d-flex justify-content-center">
+                            <!-- Checkbox -->
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+                              <label class="form-check-label" for="form2Example31"> 아이디 저장 </label>
+                            </div>
+                          </div>
+                      
+                          <div class="col">
+                            <!-- Simple link -->
+                            <a href="#!"><strong>비밀번호 찾기</strong></a>
+                          </div>
+                        </div>
+                      
+                        <!-- Submit button -->
+                        <button type="button" class="btn btn-secondary btn-block mb-4">로그인</button>
+
+                        <div style="border-bottom: 2px solid gray;"></div>
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          <p>아직 회원이 아니신가요? <a href="join.html"><strong>회원가입</strong></a></p>
+                          
+                        </div>
+                      </form>
+                    
+                </div>
+            </div>
+    </div>
+</body>
+</html>
